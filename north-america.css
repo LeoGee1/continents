@@ -1,0 +1,261 @@
+body, p, a, ul, li, h3, a {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.904);
+    color: #ddd;
+    font-family: 'JosefinSans';
+}
+@font-face{
+    font-family: 'JosefinSans';
+    src: url('fonts/JosefinSans.ttf');
+}
+@font-face {
+    font-family: 'Cuprum';
+    src: url('fonts/Cuprum.ttf');
+}
+
+/* mobile styles */
+
+.nav {
+    z-index: 100;
+    border-bottom: 3px inset rgba(80, 83, 241, 0.664);
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    /* box-shadow: 5px 1px 20px rgb(110, 109, 109); */
+    background-color: rgba(248, 244, 244, 0.068);
+    fill-opacity: 1;
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0px;
+}
+.back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4%;
+    background-color: rgba(8, 8, 8, 0.007);
+    opacity: 0.4;
+    font-size: 16px;
+    overflow: hidden;
+    background-image: url('conimage/glass.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.return {
+    background: none;
+    transition: 0.3s;
+    padding: 5px;
+}
+.return:hover {
+    background: black;
+    border-radius: 3px;
+}
+.bars {
+    padding: 5px;
+    background: none; 
+}
+.bars:hover {
+    background: black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.miss-nav {
+   /* z-index: 100; */
+   display: inline-flex;
+   flex-direction: column;
+   position: absolute;
+   top: 42px;
+   right: 0px;
+   background-color: black;
+   visibility: hidden;
+}
+.miss-nav a {
+    padding: 5px;
+    border: 1px inset rgba(221, 221, 221, 0.062);
+}
+.miss-nav a:hover {
+    background-color: rgba(128, 128, 128, 0.212);
+}
+.parent{
+    width: 95%;
+    max-width: 1200px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('conimage/world.png');
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center;
+    border-radius: 5px;
+    
+}
+.child {
+    width: 95%;
+    height: 95%;
+    border: 1px inset rgba(221, 221, 221, 0.521);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    overflow: auto;
+}
+.child h2 {
+    text-align: center;
+    border-bottom: 2px solid rgb(8, 8, 8);
+    scroll-behavior: smooth ;
+    font-family: 'Cuprum';
+    letter-spacing: 10px;
+}
+
+.child h3 {
+    background: none;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 10px;
+}
+.grid {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 7px;
+}
+.pot {
+    margin: 30px 10px;
+}
+.cups {
+    grid-column: 1/9; 
+    border: 1px solid rgba(221, 221, 221, 0.37);
+    height: 70px;
+    border-radius: 10px;
+    background-image: url(conimage/glass.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.cups-child {
+    backdrop-filter: blur(150px);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.cups-child h3 {
+    background: none;
+    font-weight: 50;
+    padding: 10px;
+    color: rgba(18, 199, 231, 0.877);
+}
+.coloured {
+    font-size: 24px;
+    padding: 10px 0px 10px 10px;
+}
+.blank {
+   padding: 5px;
+   font-size: 24px;
+   color: rgba(0, 0, 0, 0.897) ;
+}
+.first {
+    color: rgba(18, 199, 231, 0.877);  
+}
+.second :nth-child(1) {
+    color: rgba(250, 40, 3, 0.836)
+}
+.third :nth-child(1) {
+    color: rgba(250, 213, 3, 0.836)
+}
+.fourth :nth-child(1) {
+    color: rgb(20, 243, 113);
+
+}
+
+/* tablet styles */
+@media screen and (min-width: 513px) and (max-width: 704px) {
+    .nav {
+        border-bottom: 5px inset rgba(80, 83, 241, 0.664);
+        padding: 10px;
+        margin-bottom: 40px;
+        font-size: 20px;
+    }
+    .child h2 {
+        border-bottom: 3px solid rgb(8, 8, 8);
+        padding-bottom: 5px;
+    }
+    .child h3 {
+        font-size: 18px;
+        margin: 15px;
+    }
+    .cups-child h3 {
+        font-size: 20px;
+        padding: 10px;
+    } 
+}
+
+
+@media screen and (min-width: 704px) and (max-width:1024px) {
+    .nav {
+        padding: 15px;
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+    .child h2 {
+        border-bottom: 4px solid rgb(8, 8, 8);
+        padding-bottom: 5px;
+        font-size: 30px;
+    }
+    .child h3 {
+        font-size: 18px;
+        margin: 15px;
+    }
+    .grid {
+        gap: 10px;
+    }
+    .cups {
+        grid-column: span 4;
+    }
+    .cups-child h3 {
+        font-size: 20px;
+        padding: 10px;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .child h2 {
+        border-bottom: 5px solid rgb(8, 8, 8);
+        padding-bottom: 10px;
+        font-size: 30px;
+        letter-spacing: 15px;
+    }
+    .child h3 {
+        font-size: 22px;
+        margin: 15px;
+        padding: 20px;
+    }
+    .grid {
+        gap: 10px;
+        max-width: 1024px;
+        margin: 20px auto;
+        
+    }
+    .cups {
+        grid-column: span 4;
+    }
+    .cups-child h3 {
+        font-size: 20px;
+        padding: 10px;
+    } 
+}
+
+
+
+
+
+
+
+

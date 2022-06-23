@@ -1,0 +1,289 @@
+/* reset */
+body, p, a, ul, li, h3 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: black;
+    color: #ddd;
+    font-family: 'Baloda';
+}
+
+/* font-styles */
+@font-face{
+    font-family: 'Baloda';
+    src: url('fonts/Baloda.ttf');
+}
+
+/* mobile styles */
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.navskip2 {
+    margin: 25px auto;
+    border: 1px solid grey;
+    transition: 0.5s;
+    width: 80%;
+}
+
+.navskip2:hover {
+    border-radius: 10px
+}
+
+.more-info2 {
+    padding: 5px;
+}
+.more-info2 h3 {
+    /* padding: 5px 10px 5px 10px; */
+    font-weight: 20;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.nav-prev {
+    padding: 5px 10px 5px 15px;
+    border-radius: 0 10px 10px 0;
+    align-self: center;
+}
+
+.nav-prev:hover {
+    background-color: rgba(221, 221, 221, 0.171);
+}
+.fa-solid {
+   padding: 6px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.question {
+    animation: shake 4s ease-in-out forwards infinite;
+}
+@keyframes shake {
+    0%{transform: rotate(0deg);}
+    5%{transform: rotate(-5deg);}
+    10%{transform: rotate(5deg);}
+    15%{transform: rotate(-5deg);}
+    20%{transform: rotate(5deg);}
+    25%{transform: rotate(0deg);}
+}
+.con {
+    grid-column: 1/9;
+    border: 1px solid grey;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: 0.5s;
+    font-weight: 100;
+}
+.con:hover {
+    border: 5px solid #ddd;
+    border-left: 0;
+    border-right: 0;
+    background-color: rgba(221, 221, 221, 0.116);
+    filter: grayscale(0);
+}
+.con img {
+    width: 50%;
+}
+.con a {
+    padding: 2px 10px;
+    transition: 0.5s;
+}
+.afrimg:hover ~ .afr {
+    color: rgb(247, 166, 90);
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.asiimg:hover ~ .asi {
+    color: rgb(189, 20, 14);
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.norimg:hover ~ .nor {
+    color: rgb(0, 255, 76);
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.souimg:hover ~ .sou {
+    color: rgb(255, 0, 221);
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.eurimg:hover ~ .eur {
+    color: rgb(0, 217, 255);
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.ausimg:hover ~ .aus {
+    color: rgba(200, 255, 0, 0.61);
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.antimg:hover ~ .ant {
+    color: rgb(0, 217, 255);
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.africa img {
+    width: 40%;
+}
+.africa:hover {
+    animation: flip 0.2s ease-in forwards;
+}
+.africa::before{
+    content: 'lovers dont lie';
+    position: absolute;
+    border: 1px solid blue;
+    height: 13%;
+    top: 11px;
+    display: none;
+}
+ .africa-info {
+    position: absolute;
+    display: none;
+} 
+ .africa-info:hover {
+    display: flex;
+} 
+
+.asia img {
+    width: 80%;
+}
+.europe img {
+    width: 60%;
+}
+.north-america img {
+    width: 40%;
+}
+.south-america img {
+    width: 30%;
+}
+
+/* tablet styles */
+@media screen and (min-width: 513px) {
+    .layout {
+        border: 2px solid #ddd;
+        margin: 0 10px;
+        border-radius: 10px;
+        }
+    .con {border: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        transition: 0.5s;
+        font-weight: 100;
+    }
+    .con:hover {
+        border: 0;
+        background-color: rgba(221, 221, 221, 0.116);
+    }
+    .africa {
+        grid-column: 1/9;
+    }
+
+    .africa img {
+        width: 25%;
+    }
+    .asia {
+        grid-column: 1/9; 
+        justify-content: flex-end;
+    }
+    .asia img {
+        width: 55%;
+    }
+    .north-america img {
+        width: 30%;
+    }
+    .south-america {
+        justify-content: flex-end;
+    }
+    .south-america img {
+        width: 20%;
+    }
+    .europe img {
+        width: 40%;
+    }
+    .australia {
+        justify-content: end;
+    }
+    .australia img {
+        width: 30%;
+    }
+    .antartica img {
+        width: 30%;
+    }
+
+}
+/* desktop styles */
+@media screen and (min-width: 1024px) {
+    .layout {
+        border: 0;
+    }
+    .navskip2 {
+        max-width: 900px;
+        margin: 40px auto;
+    }
+    .con {
+        padding: 40px;
+        justify-content: center;
+        filter: grayscale(1);
+    }
+
+    .africa {
+        grid-column: 1/3;
+    }
+    .africa img {
+        width: 90%;
+    }
+    .asia {
+        grid-column: 3/7;
+    }
+    .asia img {
+        width: 80%;
+    }
+    .north-america {
+        grid-column: 7/9;
+    }
+    .north-america img {
+        width: 90%;
+    }
+    .south-america {
+        grid-column: 4/6;
+    }
+    .south-america img {
+        width: 70%;
+    }
+    .europe {
+        grid-column: 1/3;
+    }
+    .europe img {
+        width: 100%;
+    }
+    .australia {
+        grid-column: 3/7
+    }
+    .australia img {
+        width: 40%;
+    }
+    .antartica {
+        grid-column: 7/9;
+    }
+    .antartica img {
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
