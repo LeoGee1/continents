@@ -9,14 +9,15 @@ body, p, a, ul, li, h3, a {
 }
 @font-face{
     font-family: 'JosefinSans';
-    src: url('fonts/JosefinSans.ttf');
+    src: url('/fonts/JosefinSans.ttf');
 }
 @font-face {
     font-family: 'Cuprum';
-    src: url('fonts/Cuprum.ttf');
+    src: url('/fonts/Cuprum.ttf');
 }
 
 /* mobile styles */
+
 .nav {
     z-index: 100;
     border-bottom: 3px inset rgba(80, 83, 241, 0.664);
@@ -38,7 +39,7 @@ body, p, a, ul, li, h3, a {
     opacity: 0.4;
     font-size: 16px;
     overflow: hidden;
-    background-image: url('conimage/glass.png');
+    background-image: url('/conimage/glass.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -65,6 +66,9 @@ body, p, a, ul, li, h3, a {
     border-radius: 3px;
     cursor: pointer;
 }
+.bars:active {
+    color: rgb(18, 18, 109);
+}
 .miss-nav {
    /* z-index: 100; */
    display: inline-flex;
@@ -90,12 +94,11 @@ body, p, a, ul, li, h3, a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('conimage/world.png');
+    background-image: url('/conimage/world.png');
     background-repeat: no-repeat;
     background-size: 1000px;
     background-position: center;
     border-radius: 5px;
-    
 }
 .child {
     width: 95%;
@@ -115,8 +118,8 @@ body, p, a, ul, li, h3, a {
 
 .child h3 {
     background: none;
-    font-size: 16px;
-    font-weight: 100;
+    font-size: 15px;
+    font-weight: 500;
     margin: 10px;
 }
 .grid {
@@ -133,7 +136,7 @@ body, p, a, ul, li, h3, a {
     border: 1px solid rgba(221, 221, 221, 0.37);
     height: 70px;
     border-radius: 10px;
-    background-image: url(conimage/glass.png);
+    background-image: url(/conimage/glass.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -250,11 +253,3 @@ body, p, a, ul, li, h3, a {
         padding: 10px;
     } 
 }
-
-
-
-
-
-
-
-

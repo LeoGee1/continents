@@ -18,11 +18,11 @@ body, p, a, ul, li, h4 {
 /* font-styles */
 @font-face{
     font-family: 'Baloda';
-    src: url('fonts/Baloda.ttf');
+    src: url('/fonts/Baloda.ttf');
 }
 @font-face {
     font-family: 'palyball';
-    src: url('fonts/Playball.ttf');
+    src: url('/fonts/Playball.ttf');
 }
 
 /* mobile-styles */
@@ -56,17 +56,20 @@ body, p, a, ul, li, h4 {
 }
 .nav-next {
     grid-column: 7/9;
-    padding: 8px;
+    padding: 8px 0px;
     text-align: center;
     background-color: inherit;
     border-radius: 0px 8px 8px 0px;
     transition: 0.5s;
 }
 .fa-solid {
+    width: auto;
     color: white;
+    padding: 10px 25px;
+    margin: 0;
 }
-.fa-solid:hover {
-    animation: swift 1.4s cubic-bezier(0,.68,1,-0.35) forwards;
+.fa-solid:active {
+    animation: swift 0.7s cubic-bezier(0,.68,1,-0.35) forwards;
 }
 @keyframes swift {
     0% {transform: translateX(0)}
@@ -79,16 +82,17 @@ body, p, a, ul, li, h4 {
     background-color: #03112e;
 }
 .main {
-    background-image: url(conimage/lines.png);
+    background-image: url(/conimage/lines.png);
     background-size: contain;
     background-repeat: repeat;
     /* min-width: 200px; */
 }
 .earth-div {
-    background-image:url(conimage/Searth.jpg);
+    background-image:url(/conimage/Searth.jpg);
     grid-column: 2/8;
     margin: 40px 10px 30px;
     background-size: cover;
+    max-width: 400px;
     height: 280px;
     border-radius: 50%;
     box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
@@ -129,6 +133,13 @@ footer {
 }
 .logo {
     text-align: center;
+    margin: 3px;
+}
+.logo:hover {
+    background-color: rgba(128, 128, 128, 0.171);
+}
+.logo:active {
+    background-color: #000;
 }
 
 .logo img {
@@ -141,6 +152,10 @@ footer {
         grid-column: 1/6;
         margin: 30px 15px;
         height: 250px
+    }
+    .fa-solid {
+        padding: 10px 40px;
+        margin: 0;
     }
 
     .more-info {
@@ -163,6 +178,10 @@ footer {
         margin: 30px 15px;
         height: 200px
 
+    }
+    .fa-solid {
+        padding: 10px 60px;
+        margin: 0;
     }
 
     .more-info {
@@ -191,6 +210,14 @@ footer {
         height: 430px
 
     }
+    .nav-skip {
+        font-size: 20px;
+    }
+    .fa-solid {
+        font-size: 20px;
+        padding: 10px 75px;
+        margin: 0;
+    }
 
     .more-info {
         grid-column: 1/9;
@@ -210,7 +237,7 @@ footer {
         background-size: contain;
     }
     .text {
-    font-size: 100%;
+    font-size: 110%;
     }  
     .logo img {
         width: 60%;
