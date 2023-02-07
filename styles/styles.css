@@ -21,7 +21,7 @@ body, p, a, ul, li, h4 {
     src: url('/fonts/Baloda.ttf');
 }
 @font-face {
-    font-family: 'palyball';
+    font-family: 'playball';
     src: url('/fonts/Playball.ttf');
 }
 
@@ -88,7 +88,7 @@ body, p, a, ul, li, h4 {
     /* min-width: 200px; */
 }
 .earth-div {
-    background-image:url(/conimage/Searth.jpg);
+    background-image:url('/conimage/Searth.jpg');
     grid-column: 2/8;
     margin: 40px 10px 30px;
     background-size: cover;
