@@ -9,7 +9,7 @@ body, p, a, ul, li, h3, a {
 }
 @font-face{
     font-family: 'JosefinSans';
-    src: url('/fonts/JosefinSans.ttf');
+    src: url('fonts/JosefinSans.ttf');
 }
 @font-face {
     font-family: 'Cuprum';
@@ -39,7 +39,7 @@ body, p, a, ul, li, h3, a {
     opacity: 0.4;
     font-size: 16px;
     overflow: hidden;
-    background-image: url('/conimage/glass.png');
+    background-image: url('conimage/glass.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -94,11 +94,12 @@ body, p, a, ul, li, h3, a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/conimage/world.png');
+    background-image: url('conimage/world.png');
     background-repeat: no-repeat;
     background-size: 1000px;
     background-position: center;
     border-radius: 5px;
+    
 }
 .child {
     width: 95%;
@@ -136,7 +137,7 @@ body, p, a, ul, li, h3, a {
     border: 1px solid rgba(221, 221, 221, 0.37);
     height: 70px;
     border-radius: 10px;
-    background-image: url('/conimage/glass.png');
+    background-image: url('conimage/glass.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

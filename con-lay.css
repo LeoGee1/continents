@@ -12,7 +12,7 @@ body, p, a, ul, li, h3 {
 /* font-styles */
 @font-face{
     font-family: 'Baloda';
-    src: url('/fonts/Baloda.ttf');
+    src: url('fonts/Baloda.ttf');
 }
 
 /* mobile styles */

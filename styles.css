@@ -18,11 +18,11 @@ body, p, a, ul, li, h4 {
 /* font-styles */
 @font-face{
     font-family: 'Baloda';
-    src: url('/fonts/Baloda.ttf');
+    src: url('fonts/Baloda.ttf');
 }
 @font-face {
     font-family: 'playball';
-    src: url('/fonts/Playball.ttf');
+    src: url('fonts/Playball.ttf');
 }
 
 /* mobile-styles */
