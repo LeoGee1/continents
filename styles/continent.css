@@ -82,13 +82,13 @@ body, p, a, ul, li, h4 {
     background-color: #03112e;
 }
 .main {
-    background-image: url(/conimage/lines.png);
+    background-image: url('/conimage/lines.png');
     background-size: contain;
     background-repeat: repeat;
     /* min-width: 200px; */
 }
 .earth-div {
-    background-image:url(/conimage/Searth.jpg);
+    background-image:url('/conimage/Searth.jpg');
     grid-column: 2/8;
     margin: 40px 10px 30px;
     background-size: cover;
