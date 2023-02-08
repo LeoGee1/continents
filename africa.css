@@ -13,7 +13,7 @@ body, p, a, ul, li, h3, a {
 }
 @font-face {
     font-family: 'Cuprum';
-    src: url('/fonts/Cuprum.ttf');
+    src: url('fonts/Cuprum.ttf');
 }
 
 /* mobile styles */
